@@ -7,8 +7,8 @@ use Illuminate\Http\Request;
 
 class MenuController extends Controller
 {
-    public function show(User $user)
+    public function index(User $user)
     {
-        return view('form', ['user' => $user]);
+        return view('users.index', ['user' => $user]);
     }
 }
